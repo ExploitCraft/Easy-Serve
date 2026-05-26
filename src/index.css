@@ -1,0 +1,69 @@
+/* EasyServe — Global Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", "Consolas", monospace;
+
+  --bg-deep:    #070a10;
+  --bg-base:    #0e1117;
+  --bg-surface: #111620;
+  --bg-topbar:  #0b0f18;
+  --bg-border:  #1e2535;
+  --bg-subtle:  #1a2030;
+
+  --text-primary:   #dde4ee;
+  --text-secondary: #8099b0;
+  --text-muted:     #4a5a70;
+  --text-dim:       #3a4a5a;
+
+  --teal:        #22d3a8;
+  --teal-dark:   #16a97e;
+  --teal-bg:     #0f2820;
+  --teal-border: #1a4030;
+
+  --amber: #f0a020;
+  --red:   #e05555;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+label,
+nav {
+  user-select: none;
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #1e2535; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #2a3548; }
+
+.xterm-viewport { overflow-y: auto !important; }
+.xterm { padding: 4px 8px; }
